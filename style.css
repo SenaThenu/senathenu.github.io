@@ -2,4 +2,5 @@
     display: block;
     margin-left: 200px;
     width: 8%;
+    max-width: 100px;
 }
