@@ -1,5 +1,133 @@
-#logo {
-    display: block;
+/* Margin is set to 200px */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+#logo{
+    display: inline;
     margin-left: 200px;
     width: 8%;
+    float: left;
+}
+ul.nav{
+    list-style-type: none;
+    margin-left: 200px;
+    overflow: hidden;
+}
+
+ul.nav li{
+    right: 200px;
+    position: relative;
+    float: right;
+}
+
+li a{
+    display: block;
+    border: 2px solid black;
+    border-radius: 30px;
+    font-size: large;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px;
+    padding: 2px 5px;
+    width: 75%;
+}
+
+li a:hover{
+    background-color: darkcyan;
+    color: white;
+}
+
+.nav_imgs{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+img.my_pic{
+    margin-top: 20px;
+    margin-left: 200px;
+    display: block;
+    width: 400px;
+    float: left;
+}
+
+.introduction{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-left: 50px;
+    margin-right: 200px;
+    margin-top: 50px;
+    text-align: left;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+.introductory {
+    margin: auto;
+}
+
+#signature {
+    float: left;
+    width: 250px;
+}
+
+#banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+    margin-bottom: 50px;
+    width: 900px;
+}
+
+.row {
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    height: 100px;
+    margin: 10px;
+}
+
+.column h1{
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: underline dashed;
+}
+
+.column p {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 21px;
+    line-height: 150%;
+}
+
+.conclusion {
+    margin-top: 180px;
+    display: block;
+    padding-bottom: 50px;
+}
+
+.con_txt {
+    padding-top: 30px;
+    margin-left: 200px;
+    font-size: 18px;
+}
+
+.social_media {
+    width: 30px;
+    right: 0px;
+    display: block;
+    float: right;
+    margin-right: 30px;
 }
