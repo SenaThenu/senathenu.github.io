@@ -1,66 +1,66 @@
 /* Margin is set to 200px */
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
 }
+
+h1 {
+    font-weight: normal;
+}
+
 #logo{
-    display: inline;
-    margin-left: 200px;
-    width: 8%;
+    display: block;
     float: left;
 }
-ul.nav{
-    list-style-type: none;
-    margin-left: 200px;
-    overflow: hidden;
-}
 
-ul.nav li{
+.wrapper {
+    display: grid;
     right: 200px;
-    position: relative;
-    float: right;
+    grid-template-columns: 26.66% 26.66% 26.66%;
+    grid-gap: 20px;
 }
 
-li a{
+.blog{
     display: block;
-    border: 2px solid black;
-    border-radius: 30px;
-    font-size: large;
-    color: black;
-    text-align: center;
     text-decoration: none;
-    margin: 2px;
-    padding: 2px 5px;
-    width: 75%;
+    border-radius: 50px;
+    color: black;
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 2px;
+    margin-right: 1px;
+    padding: 2px 0px;
+    width: 80%;
 }
 
-li a:hover{
-    background-color: darkcyan;
-    color: white;
+.blog:hover{
+    background-color: rgb(185, 218, 255);
+}
+
+.blog a {
+    text-decoration: none;
+    color: black;
 }
 
 .nav_imgs{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
 }
 
 img.my_pic{
     margin-top: 20px;
     margin-left: 200px;
     display: block;
-    width: 400px;
+    width: 25%;
     float: left;
 }
 
 .introduction{
     font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    font-size: xx-large;
+    font-size: 32px;
     margin-left: 50px;
     margin-right: 200px;
     margin-top: 50px;
@@ -84,28 +84,23 @@ img.my_pic{
     margin-right: auto;
     margin-top: 300px;
     margin-bottom: 50px;
-    width: 900px;
+    width: 60%;
 }
-
-.row {
+.info_wrapper {
+    display: grid;
     margin-left: 200px;
     margin-right: 200px;
-    display: flex;
+    grid-template-columns: 33% 33% 33%;
 }
 
-.column {
-    flex: 33.33%;
-    height: 100px;
-    margin: 10px;
-}
-
-.column h1{
+.info_col h1{
     text-align: center;
     letter-spacing: 1px;
     text-decoration: underline dashed;
 }
 
-.column p {
+.info_col p {
+    position: relative;
     text-align: center;
     letter-spacing: 1px;
     font-size: 21px;
@@ -113,7 +108,7 @@ img.my_pic{
 }
 
 .conclusion {
-    margin-top: 180px;
+    padding-top: 50px;
     display: block;
     padding-bottom: 50px;
 }
@@ -130,4 +125,114 @@ img.my_pic{
     display: block;
     float: right;
     margin-right: 30px;
+}
+
+/* For every screens whose width is larger than 1500px */
+@media only screen and (min-width: 1500px) {
+    #logo {
+        margin-left: 200px;
+        width: 8%;  
+    }
+
+    ul.nav{
+        margin-left: 200px;
+    }
+
+    ul.nav li{
+        right: 200px;
+        float: right;
+    }
+
+    li a {
+        font-size: large;
+    }
+    
+    .nav_imgs {
+        width: 20%;
+    }
+}
+
+/* Width less than 1500px */
+@media only screen and (max-width: 1499px) {
+    #logo{
+        margin-left: 100px;
+        width: 8%;
+    }
+    ul.nav{
+        margin-left: 100px;
+    }
+
+    ul.nav li{
+        right: 100px;
+        float: right;
+    }
+    li a {
+        font-size: large;
+    }
+    .nav_imgs {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 1225px) {
+    #logo{
+        margin-left: 50px;
+        width: 10%;
+    }
+    ul.nav{
+        margin-left: 50px;
+    }
+
+    ul.nav li{
+        right: 50px;
+        float: right;
+    }
+    li a {
+        font-size: medium;
+    }
+    .nav_imgs {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    #logo{
+        margin-left: 25px;
+        width: 10%;
+    }
+    ul.nav{
+        margin-left: 25px;
+    }
+
+    ul.nav li{
+        right: 25px;
+        float: right;
+    }
+    li a {
+        font-size: medium;
+    }
+    .nav_imgs {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    #logo{
+        margin-left: 10px;
+        width: 10%;
+    }
+    ul.nav{
+        margin-left: 10px;
+    }
+
+    ul.nav li{
+        right: 10px;
+        float: right;
+    }
+    li a {
+        font-size: medium;
+    }
+    .nav_imgs {
+        width: 20%;
+    }
 }
