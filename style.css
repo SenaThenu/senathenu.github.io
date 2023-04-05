@@ -10,17 +10,6 @@ h1 {
     font-weight: normal;
 }
 
-#logo{
-    display: block;
-    float: left;
-}
-
-.wrapper {
-    display: grid;
-    right: 200px;
-    grid-template-columns: 26.66% 26.66% 26.66%;
-    grid-gap: 20px;
-}
 
 .blog{
     display: block;
@@ -29,10 +18,8 @@ h1 {
     color: black;
     border: 2px solid black;
     text-align: center;
+    font-size: 18px;
     margin-top: 2px;
-    margin-right: 1px;
-    padding: 2px 0px;
-    width: 80%;
 }
 
 .blog:hover{
@@ -46,23 +33,16 @@ h1 {
 
 .nav_imgs{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 img.my_pic{
     margin-top: 20px;
-    margin-left: 200px;
     display: block;
-    width: 25%;
-    float: left;
 }
 
 .introduction{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 32px;
-    margin-left: 50px;
-    margin-right: 200px;
     margin-top: 50px;
     text-align: left;
     word-spacing: 2px;
@@ -73,26 +53,25 @@ img.my_pic{
     margin: auto;
 }
 
-#signature {
-    float: left;
-    width: 250px;
-}
-
 #banner {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 300px;
     margin-bottom: 50px;
-    width: 60%;
 }
 .info_wrapper {
     display: grid;
-    margin-left: 200px;
-    margin-right: 200px;
     grid-template-columns: 33% 33% 33%;
 }
 
+.info_col {
+    padding: 20px;
+}
+
+#middle {
+    border: 0px;
+    border-right: 3px dashed black;
+}
 .info_col h1{
     text-align: center;
     letter-spacing: 1px;
@@ -115,8 +94,6 @@ img.my_pic{
 
 .con_txt {
     padding-top: 30px;
-    margin-left: 200px;
-    font-size: 18px;
 }
 
 .social_media {
@@ -124,115 +101,164 @@ img.my_pic{
     right: 0px;
     display: block;
     float: right;
+    margin-top: 15px;
     margin-right: 30px;
 }
 
 /* For every screens whose width is larger than 1500px */
-@media only screen and (min-width: 1500px) {
-    #logo {
+@media only screen and (min-width: 1101px) {
+    .logo {
+        width: 33%;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        margin-right: 200px;
         margin-left: 200px;
-        width: 8%;  
     }
-
-    ul.nav{
-        margin-left: 200px;
+    .blog {
+        width: 80%;
+        height: 100%;   
     }
-
-    ul.nav li{
-        right: 200px;
-        float: right;
-    }
-
-    li a {
-        font-size: large;
-    }
-    
     .nav_imgs {
-        width: 20%;
+        width: 30%;
     }
+    img.my_pic {
+        margin-left: 200px;
+        width: 25%;
+        float: left;
+    }
+    .introduction {
+        font-size: 32px;
+        margin-right: 200px;
+    }
+    #signature {
+        float: left;
+        width: 15%;
+    }
+    #banner {
+        width: 55%;
+        margin-top: 300px;
+    }
+    .info_wrapper {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .con_txt {
+        margin-left: 200px;
+        font-size: 18px;
+    }
+
 }
 
 /* Width less than 1500px */
-@media only screen and (max-width: 1499px) {
-    #logo{
-        margin-left: 100px;
-        width: 8%;
-    }
-    ul.nav{
-        margin-left: 100px;
-    }
-
-    ul.nav li{
-        right: 100px;
-        float: right;
-    }
-    li a {
-        font-size: large;
-    }
-    .nav_imgs {
-        width: 20%;
-    }
-}
-
-@media only screen and (max-width: 1225px) {
-    #logo{
-        margin-left: 50px;
-        width: 10%;
-    }
-    ul.nav{
-        margin-left: 50px;
-    }
-
-    ul.nav li{
-        right: 50px;
-        float: right;
-    }
-    li a {
-        font-size: medium;
-    }
-    .nav_imgs {
-        width: 20%;
-    }
-}
-
-@media only screen and (max-width: 1150px) {
-    #logo{
-        margin-left: 25px;
-        width: 10%;
-    }
-    ul.nav{
-        margin-left: 25px;
-    }
-
-    ul.nav li{
-        right: 25px;
-        float: right;
-    }
-    li a {
-        font-size: medium;
-    }
-    .nav_imgs {
-        width: 20%;
-    }
-}
-
-@media only screen and (max-width: 1090px) {
-    #logo{
+@media only screen and (max-width: 1100px) {
+    .logo {
         margin-left: 10px;
         width: 10%;
+        float: left;
     }
-    ul.nav{
-        margin-left: 10px;
-    }
-
-    ul.nav li{
-        right: 10px;
-        float: right;
-    }
-    li a {
-        font-size: medium;
+    .blog {
+        display: block;
+        width: 30%;
+        height: 100%;
+        margin-left: 70%;
     }
     .nav_imgs {
         width: 20%;
+    }
+    img.my_pic {
+        margin-left: 20px;
+        margin-right: 50px;
+        width: 39%;
+        float: left;
+    }
+    .introduction {
+        font-size: 28px;
+        margin-right: 20px;
+    }
+    #signature {
+        float: left;
+        width: 20%;
+    }
+    #banner {
+        width: 70%;
+        margin-top: 100px;
+    }
+    .info_wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .con_txt {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #banner {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    img.my_pic {
+        display: block;
+        width: 50%;
+        float: none;
+        margin: auto;
+    }
+    #signature{
+        display: block;
+        width: 30%;
+        float: none;
+        margin: auto;
+    }
+    .introduction {
+        font-size: 21px;
+        text-align: center;
+    }
+    .info_col h1 {
+        font-size: 18px;
+    }
+    .info_col p {
+        font-size: 15px;
+    }
+    .con_txt {
+        margin-left: 10px;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .blog {
+        font-size: 12px;
+    }
+    #banner {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    img.my_pic {
+        display: block;
+        width: 50%;
+        float: none;
+        margin: auto;
+    }
+    #signature{
+        display: block;
+        width: 30%;
+        float: none;
+        margin: auto;
+    }
+    .introduction {
+        font-size: 21px;
+        text-align: center;
+    }
+    .info_col h1 {
+        font-size: 18px;
+    }
+    .info_col p {
+        font-size: 15px;
+    }
+    .con_txt {
+        margin-left: 10px;
+        font-size: 15px;
     }
 }
