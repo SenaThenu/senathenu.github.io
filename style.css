@@ -1,68 +1,48 @@
 /* Margin is set to 200px */
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-}
-#logo{
-    display: inline;
-    margin-left: 200px;
-    width: 8%;
-    float: left;
-}
-ul.nav{
-    list-style-type: none;
-    margin-left: 200px;
-    overflow: hidden;
 }
 
-ul.nav li{
-    right: 200px;
-    position: relative;
-    float: right;
+h1 {
+    font-weight: normal;
 }
 
-li a{
+
+.blog{
     display: block;
-    border: 2px solid black;
-    border-radius: 30px;
-    font-size: large;
-    color: black;
-    text-align: center;
     text-decoration: none;
-    margin: 2px;
-    padding: 2px 5px;
-    width: 75%;
+    border-radius: 50px;
+    color: black;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 2px;
 }
 
-li a:hover{
-    background-color: darkcyan;
-    color: white;
+.blog:hover{
+    background-color: rgb(185, 218, 255);
+}
+
+.blog a {
+    text-decoration: none;
+    color: black;
 }
 
 .nav_imgs{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
+    margin: auto;
 }
 
 img.my_pic{
     margin-top: 20px;
-    margin-left: 200px;
     display: block;
-    width: 400px;
-    float: left;
 }
 
 .introduction{
     font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    font-size: xx-large;
-    margin-left: 50px;
-    margin-right: 200px;
     margin-top: 50px;
     text-align: left;
     word-spacing: 2px;
@@ -73,39 +53,33 @@ img.my_pic{
     margin: auto;
 }
 
-#signature {
-    float: left;
-    width: 250px;
-}
-
 #banner {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 300px;
     margin-bottom: 50px;
-    width: 900px;
+}
+.info_wrapper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
 }
 
-.row {
-    margin-left: 200px;
-    margin-right: 200px;
-    display: flex;
+.info_col {
+    padding: 20px;
 }
 
-.column {
-    flex: 33.33%;
-    height: 100px;
-    margin: 10px;
+#middle {
+    border: 0px;
+    border-right: 3px dashed black;
 }
-
-.column h1{
+.info_col h1{
     text-align: center;
     letter-spacing: 1px;
     text-decoration: underline dashed;
 }
 
-.column p {
+.info_col p {
+    position: relative;
     text-align: center;
     letter-spacing: 1px;
     font-size: 21px;
@@ -113,15 +87,13 @@ img.my_pic{
 }
 
 .conclusion {
-    margin-top: 180px;
+    padding-top: 50px;
     display: block;
     padding-bottom: 50px;
 }
 
 .con_txt {
     padding-top: 30px;
-    margin-left: 200px;
-    font-size: 18px;
 }
 
 .social_media {
@@ -129,5 +101,164 @@ img.my_pic{
     right: 0px;
     display: block;
     float: right;
+    margin-top: 15px;
     margin-right: 30px;
+}
+
+/* For every screens whose width is larger than 1500px */
+@media only screen and (min-width: 1101px) {
+    .logo {
+        width: 33%;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+    .blog {
+        width: 80%;
+        height: 100%;   
+    }
+    .nav_imgs {
+        width: 30%;
+    }
+    img.my_pic {
+        margin-left: 200px;
+        width: 25%;
+        float: left;
+    }
+    .introduction {
+        font-size: 32px;
+        margin-right: 200px;
+    }
+    #signature {
+        float: left;
+        width: 15%;
+    }
+    #banner {
+        width: 55%;
+        margin-top: 300px;
+    }
+    .info_wrapper {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .con_txt {
+        margin-left: 200px;
+        font-size: 18px;
+    }
+
+}
+
+/* Width less than 1500px */
+@media only screen and (max-width: 1100px) {
+    .logo {
+        margin-left: 10px;
+        width: 10%;
+        float: left;
+    }
+    .blog {
+        display: block;
+        width: 30%;
+        height: 100%;
+        margin-left: 70%;
+    }
+    .nav_imgs {
+        width: 20%;
+    }
+    img.my_pic {
+        margin-left: 20px;
+        margin-right: 50px;
+        width: 39%;
+        float: left;
+    }
+    .introduction {
+        font-size: 28px;
+        margin-right: 20px;
+    }
+    #signature {
+        float: left;
+        width: 20%;
+    }
+    #banner {
+        width: 70%;
+        margin-top: 100px;
+    }
+    .info_wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .con_txt {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #banner {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    img.my_pic {
+        display: block;
+        width: 50%;
+        float: none;
+        margin: auto;
+    }
+    #signature{
+        display: block;
+        width: 30%;
+        float: none;
+        margin: auto;
+    }
+    .introduction {
+        font-size: 21px;
+        text-align: center;
+    }
+    .info_col h1 {
+        font-size: 18px;
+    }
+    .info_col p {
+        font-size: 15px;
+    }
+    .con_txt {
+        margin-left: 10px;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .blog {
+        font-size: 12px;
+    }
+    #banner {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    img.my_pic {
+        display: block;
+        width: 50%;
+        float: none;
+        margin: auto;
+    }
+    #signature{
+        display: block;
+        width: 30%;
+        float: none;
+        margin: auto;
+    }
+    .introduction {
+        font-size: 21px;
+        text-align: center;
+    }
+    .info_col h1 {
+        font-size: 18px;
+    }
+    .info_col p {
+        font-size: 15px;
+    }
+    .con_txt {
+        margin-left: 10px;
+        font-size: 15px;
+    }
 }
