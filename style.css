@@ -1,5 +1,7 @@
+/* Importing the font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+/* Global Stylising */
 * {
   margin: 0px;
   font-family: 'Poppins', sans-serif;
@@ -11,6 +13,20 @@ mark {
   background: linear-gradient(to bottom,
       transparent 55%,
       #99d0fd 45%);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 29px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
 }
 
 p {
@@ -63,7 +79,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px 100px;
+  margin: 75px 100px;
 }
 
 .img_col {
@@ -77,6 +93,11 @@ footer {
 
 #senash {
   width: 450px;
+  margin: -60px auto;
+}
+
+.desc_col {
+  margin-left: 50px;
 }
 
 #signature {
